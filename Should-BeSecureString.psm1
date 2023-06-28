@@ -70,7 +70,7 @@ function Should-BeSecureString ($ActualValue, $ExpectedValue, [switch] $Negate, 
         if ($Negate) { $succeeded = -not $succeeded }
         if (-not $succeeded) {
             if ($Negate) {
-                $failureMessage = "Expected value to be not of type [SecureString]$(if($Because) { " because $Because"})."
+                $failureMessage = "Expected value not to be of type [SecureString]$(if($Because) { " because $Because"})."
             }
             else {
                 $failureMessage = "Expected value to be of type [SecureString]$(if($Because) { " because $Because"})."
