@@ -1,4 +1,4 @@
-# -BeSecureString
+# Should -BeSecureString
 
 .SYNOPSIS
     Checks provided string is encryted and equal to the expected value
