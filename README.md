@@ -10,7 +10,7 @@ Checks provided string is encryted and equal to the expected value
 
     $Password | Should -BeSecureString 'P@ssW0rD!'
 
-### Check if value is a [SecureString] equals an other SecureString
+### Check if value is a [SecureString] that equals an other SecureString
 
     # Create a encrypted hex string
     # $SecureString = ConvertTo-SecureString 'P@ssW0rD!' -AsPlainText -Force
