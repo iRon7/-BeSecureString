@@ -2,6 +2,7 @@
 
 .SYNOPSIS
     Checks provided string is encryted and equal to the expected value
+
 .EXAMPLE
     # Check if type is [SecureString]
 
