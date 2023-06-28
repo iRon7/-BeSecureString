@@ -22,7 +22,7 @@ Checks provided string is encryted and equal to the expected value
 ### Check if value is a [SecureString] and contains an encrypted byte array
 
     # Create a base64 string from hex string
-    # Bytes = [byte[]] -split ($HexString -replace '..', '0x$& ')   
+    # $Bytes = [byte[]] -split ($HexString -replace '..', '0x$& ')   
     # [Convert]::ToBase64String($Bytes)
 
     $Bytes = [System.Convert]::FromBase64String('AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA1j/o4hMImEObwWFNzqPyxwAAAAACAAAAAAAQZgAAAAEAACAAAACIdxVHzBElmH//iKC3e6VZakEzrZs8hi1Rpp0XYhJs4gAAAAAOgAAAAAIAACAAAAASVX0NChAfz9JwUORZ7RnpshIkV47jXBYu7Ve3X4veliAAAABcGwF4ezt6kxyEMUxagaWXO4NB2k5xUkeliXDvSzJ8q0AAAAA8HqZTTrBmWQuQgqjrFs1rCPyYmLsBCAZc24IoiO3Nk2klzblvjDxTmh4AA/4NQMb/Ojdl0yio3IGcloFVm025')
