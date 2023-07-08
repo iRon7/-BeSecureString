@@ -27,3 +27,5 @@ Checks provided string is encryted and equal to the expected value
 
     $Bytes = [System.Convert]::FromBase64String('AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA1j/o4hMImEObwWFNzqPyxwAAAAACAAAAAAAQZgAAAAEAACAAAACIdxVHzBElmH//iKC3e6VZakEzrZs8hi1Rpp0XYhJs4gAAAAAOgAAAAAIAACAAAAASVX0NChAfz9JwUORZ7RnpshIkV47jXBYu7Ve3X4veliAAAABcGwF4ezt6kxyEMUxagaWXO4NB2k5xUkeliXDvSzJ8q0AAAAA8HqZTTrBmWQuQgqjrFs1rCPyYmLsBCAZc24IoiO3Nk2klzblvjDxTmh4AA/4NQMb/Ojdl0yio3IGcloFVm025')
     $Password | Should -BeSecureString $Bytes
+
+See also Pester issue: [`#2374` $SecureString |Should -be testable](https://github.com/pester/Pester/issues/2374)
